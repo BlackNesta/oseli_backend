@@ -11,7 +11,6 @@ The concept was inspired by the challenges couples face when relying on spreadsh
 - **Database:** PostgreSQL 17.2  
 
 ## License
-
 © 2025 Soft-Man Development Garage SRL. All rights reserved.
 
 This software and all associated materials, including code, designs, and documentation, are the exclusive property of Soft-Man Development Garage SRL.  
