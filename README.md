@@ -6,7 +6,7 @@ The Wedding Planner App provides couples with a centralized platform to manage e
 The concept was inspired by the challenges couples face when relying on spreadsheets, group chats, and scattered resources. By offering a simple and collaborative experience, the app helps transform wedding planning from a stressful process into an organized and enjoyable journey.
 
 ## Tech Stack
-- **Ruby:** 3.4.1 (2024-12-25 revision 48d4efcb85) +PRISM [arm64-darwin24]  
+- **Ruby:** 3.4.1 
 - **Rails:** 8.0.3  
 - **Database:** PostgreSQL 17.2  
 
