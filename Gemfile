@@ -65,9 +65,6 @@ group :development do
 
   # Generate Entity-Relationship Diagrams for Rails applications [https://github.com/voormedia/rails-erd]
   gem "rails-erd"
-
-  # Generate a visual representation of your Rails application's routes [https://github.com/fgrehm/letter_opener_web]
-  gem "letter_opener_web"
 end
 
 group :development, :test do
