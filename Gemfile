@@ -39,15 +39,47 @@ gem "devise"
 gem "devise-jwt"
 gem "jsonapi-serializer"
 
+
+gem "awesome_print"
+
 gem "sidekiq"
 
+group :development do 
+  # N+1 query detection https://github.com/flyerhzm/bullet
+  gem "bullet"
+
+  # Check for vulnerable versions of gems [https://github.com/rubysec/bundler-audit#readme]
+  gem "bundler-audit"
+
+  # Ruby code quality reporter [https://github.com/whitesmith/rubycritic]
+  gem "rubycritic", require: false
+
+  # Ruby static code analyzer and formatter [https://github.com/rubocop/rubocop]
+  gem "rubocop", require: false
+
+  # Trace the routes defined in your Rails application [https://github.com/amatsuda/traceroute]
+  gem "traceroute"
+
+  # Annotate Rails classes with schema information [https://github.com/ctran/annotate_models]
+  gem "annotaterb"
+
+  # Generate Entity-Relationship Diagrams for Rails applications [https://github.com/voormedia/rails-erd]
+  gem "rails-erd"
+
+  # Generate a visual representation of your Rails application's routes [https://github.com/fgrehm/letter_opener_web]
+  gem "letter_opener_web"
+end
+
 group :development, :test do
-  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
+  # Pry is a runtime developer console and IRB alternative with powerful introspection capabilities.
+  gem "pry"
 
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  # Loads environment variables from .env into ENV
+  gem "dotenv"
 end
