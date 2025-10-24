@@ -36,6 +36,7 @@ gem "thruster", require: false
 gem "rack-cors"
 
 gem "devise"
+gem "devise-async"
 gem "devise-jwt"
 gem "jsonapi-serializer"
 
@@ -44,7 +45,7 @@ gem "awesome_print"
 
 gem "sidekiq"
 
-group :development do 
+group :development do
   # N+1 query detection https://github.com/flyerhzm/bullet
   gem "bullet"
 
@@ -65,6 +66,8 @@ group :development do
 
   # Generate Entity-Relationship Diagrams for Rails applications [https://github.com/voormedia/rails-erd]
   gem "rails-erd"
+
+  gem "letter_opener"
 end
 
 group :development, :test do

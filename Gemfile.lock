@@ -117,6 +117,9 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise-async (1.0.0)
+      activejob (>= 5.0)
+      devise (>= 4.0)
     devise-jwt (0.12.1)
       devise (~> 4.0)
       warden-jwt_auth (~> 0.10)
@@ -203,6 +206,8 @@ GEM
       addressable (~> 2.8)
       childprocess (~> 5.0)
       logger (~> 1.6)
+    letter_opener (1.10.0)
+      launchy (>= 2.2, < 4)
     lint_roller (1.1.0)
     logger (1.7.0)
     loofah (2.24.1)
@@ -480,10 +485,12 @@ DEPENDENCIES
   bullet
   bundler-audit
   devise
+  devise-async
   devise-jwt
   dotenv
   jsonapi-serializer
   kamal
+  letter_opener
   pg (~> 1.1)
   pry
   puma (>= 5.0)
