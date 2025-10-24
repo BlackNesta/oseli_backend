@@ -45,7 +45,7 @@ gem "awesome_print"
 
 gem "sidekiq"
 
-group :development do 
+group :development do
   # N+1 query detection https://github.com/flyerhzm/bullet
   gem "bullet"
 
