@@ -377,7 +377,6 @@ GEM
     ruby-graphviz (1.2.5)
       rexml
     ruby-progressbar (1.13.0)
-    ruby_http_client (3.5.5)
     ruby_parser (3.21.1)
       racc (~> 1.5)
       sexp_processor (~> 4.16)
@@ -394,8 +393,6 @@ GEM
       tty-which (~> 0.5.0)
       virtus (~> 2.0)
     securerandom (0.4.1)
-    sendgrid-ruby (6.7.0)
-      ruby_http_client (~> 3.4)
     sexp_processor (4.17.4)
     sidekiq (8.0.8)
       connection_pool (>= 2.5.0)
@@ -503,7 +500,6 @@ DEPENDENCIES
   rubocop
   rubocop-rails-omakase
   rubycritic
-  sendgrid-ruby
   sidekiq
   solid_cable
   solid_cache

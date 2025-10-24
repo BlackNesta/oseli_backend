@@ -70,10 +70,6 @@ group :development do
   gem "letter_opener"
 end
 
-group :development, :production do 
-  gem "sendgrid-ruby"
-end
-
 group :development, :test do
   # Pry is a runtime developer console and IRB alternative with powerful introspection capabilities.
   gem "pry"
