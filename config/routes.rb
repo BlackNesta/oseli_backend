@@ -9,10 +9,13 @@ Rails.application.routes.draw do
     sign_in: "login",
     sign_out: "logout",
     registration: "signup",
-    confirmation: "confirm"
+    confirmation: "confirm",
+    password: "reset_password"
   },
   controllers: {
     sessions: "users/sessions",
-    registrations: "users/registrations"
+    registrations: "users/registrations",
+    confirmations: "users/confirmations",
+    passwords: "users/passwords"
   }
 end
