@@ -36,6 +36,7 @@ gem "thruster", require: false
 gem "rack-cors"
 
 gem "devise"
+gem "devise-async"
 gem "devise-jwt"
 gem "jsonapi-serializer"
 
@@ -65,6 +66,12 @@ group :development do
 
   # Generate Entity-Relationship Diagrams for Rails applications [https://github.com/voormedia/rails-erd]
   gem "rails-erd"
+
+  gem "letter_opener"
+end
+
+group :development, :production do 
+  gem "sendgrid-ruby"
 end
 
 group :development, :test do
